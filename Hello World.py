@@ -1,5 +1,8 @@
 print("goodbye World")
 
+def mean(inp):
+    return sum(inp)/len(inp)
+
 def median(inp):
     l = len(inp)
     i1 = l//2
@@ -9,8 +12,10 @@ def median(inp):
         return (inp[i1] + inp[i2])/2
     else:
         return inp[i1]
-    
+
 arr = [1,2,3,4,5]
+print(mean(arr))
+
 arr2 = [1,2,3,4]
 
 print(median(arr))
